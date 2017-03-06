@@ -1,5 +1,5 @@
 import os
-from urllib import urlencode
+from urllib.parse import urlencode
 
 from flask import Flask, session, redirect
 from flask_oauthlib.client import OAuth
