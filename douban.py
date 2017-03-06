@@ -31,4 +31,4 @@ def authorized():
 
 
 if __name__ == '__main__':
-    app.run(port=4040)
+    app.run(port=80)
