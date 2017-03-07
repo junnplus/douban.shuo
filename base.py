@@ -50,7 +50,10 @@ def format_text(text):
 
 
 def start_http_server():
-    subprocess.Popen('python ./server.py', shell=True)
+    try:
+        subprocess.Popen('python ./server.py', shell=True)
+    except Exception:
+        pass
 
 
 def stop_http_server():
