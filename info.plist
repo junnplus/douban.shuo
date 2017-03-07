@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2ABEF412-42D0-41A8-AFC0-1E861DB8660C</string>
+				<string>46F151D1-7E7E-47BD-A8E9-DE2CD923F422</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -42,6 +42,55 @@
 				<false/>
 			</dict>
 		</array>
+		<key>46F151D1-7E7E-47BD-A8E9-DE2CD923F422</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>27C33924-C2BA-4642-813C-7D4D7A4A46B5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AE6963DB-3194-48C8-A94B-EAC8375BC065</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C48E911E-9E06-4DDC-8651-0B3A1BF5A87F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>46F151D1-7E7E-47BD-A8E9-DE2CD923F422</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C48E911E-9E06-4DDC-8651-0B3A1BF5A87F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B95598F1-DBF3-43DB-88CE-B9732E0319BD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CCFA1693-ED80-4261-B5BD-13D7EC7F0F83</key>
 		<array/>
 	</dict>
@@ -58,14 +107,56 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python logout.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B95598F1-DBF3-43DB-88CE-B9732E0319BD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>logout</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>C48E911E-9E06-4DDC-8651-0B3A1BF5A87F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>shuo</string>
+				<string>douban</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -75,26 +166,26 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>正在加载豆瓣广播</string>
+				<string></string>
 				<key>script</key>
 				<string>python run.py "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>豆瓣广播</string>
+				<string>豆瓣</string>
 				<key>title</key>
-				<string>豆瓣广播</string>
+				<string>豆瓣</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>24D20640-7751-4393-AC0A-3E8573EAFDF3</string>
+			<string>AE6963DB-3194-48C8-A94B-EAC8375BC065</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -132,9 +223,71 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
+			<string>46F151D1-7E7E-47BD-A8E9-DE2CD923F422</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>login</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
 			<string>2ABEF412-42D0-41A8-AFC0-1E861DB8660C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>shuo</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>正在加载豆瓣广播</string>
+				<key>script</key>
+				<string>python shuo.py</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>豆瓣广播</string>
+				<key>title</key>
+				<string>豆瓣广播</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>24D20640-7751-4393-AC0A-3E8573EAFDF3</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -187,33 +340,61 @@
 		<key>24D20640-7751-4393-AC0A-3E8573EAFDF3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>120</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>380</integer>
 		</dict>
 		<key>27C33924-C2BA-4642-813C-7D4D7A4A46B5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>680</integer>
+			<integer>710</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>220</integer>
 		</dict>
 		<key>2ABEF412-42D0-41A8-AFC0-1E861DB8660C</key>
 		<dict>
 			<key>xpos</key>
 			<integer>470</integer>
 			<key>ypos</key>
-			<integer>80</integer>
+			<integer>250</integer>
+		</dict>
+		<key>46F151D1-7E7E-47BD-A8E9-DE2CD923F422</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+		<key>AE6963DB-3194-48C8-A94B-EAC8375BC065</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+		<key>B95598F1-DBF3-43DB-88CE-B9732E0319BD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>710</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>C48E911E-9E06-4DDC-8651-0B3A1BF5A87F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>90</integer>
 		</dict>
 		<key>CCFA1693-ED80-4261-B5BD-13D7EC7F0F83</key>
 		<dict>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>380</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/Junnplus/douban.shuo</string>
 </dict>
 </plist>
