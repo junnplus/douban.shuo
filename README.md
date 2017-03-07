@@ -4,4 +4,4 @@
 
 ## Start
 
-In Alfred type (`shuo`) to authenticate your account. The login uses OAuth, so you do not have to enter your credentials.
+In Alfred type (`shuo` or `douban`) to authenticate your account. The login uses OAuth, so you do not have to enter your credentials.
